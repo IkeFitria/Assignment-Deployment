@@ -29,7 +29,7 @@ const Photos = () => {
     // TODO: answer here
     const fetchData = async () => {
       try {
-        const res = await (await fetch(`https://gallery-app-server.vercel.app/photos?_sort=id&_order=${sort}&q=${search}`)).json()
+        const res = await (await fetch(`https://gallery-app-server.vercel.app/photos?_sort=id&_order=${sort}&q=${submited}`)).json()
         setPhotos(res)
       } 
       catch(error) {
